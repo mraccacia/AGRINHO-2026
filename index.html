@@ -1,201 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGRINHO 2026 | Agronegócio Sustentável</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <style>
-        .hero-bg {
-            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1625246333195-78d9c38ad8d6?ixlib=rb-4.0.3&auto=format&fit=crop&q=80');
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
 </head>
-<body class="font-sans text-gray-800">
+
+<body>
 
     <!-- NAVBAR -->
-    <nav class="bg-white shadow-md fixed w-full z-50">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <i class="fa-solid fa-seedling text-3xl text-green-600"></i>
-                <h1 class="text-2xl font-bold text-green-700">AGRINHO 2026</h1>
-            </div>
-
-            <div class="hidden md:flex items-center gap-8">
-                <a href="#producao" class="hover:text-green-600 font-medium">Produção</a>
-                <a href="#sustentabilidade" class="hover:text-green-600 font-medium">Sustentabilidade</a>
-                <a href="#desafios" class="hover:text-green-600 font-medium">Desafios</a>
-                <a href="#solucoes" class="hover:text-green-600 font-medium">Soluções</a>
-                <a href="#interativos" class="hover:text-green-600 font-medium">Interativos</a>
-            </div>
-
-            <a href="#contato" class="bg-green-600 text-white px-6 py-2 rounded-full font-medium hover:bg-green-700 transition">
-                Saiba Mais
-            </a>
-
-            <!-- Hamburger -->
-            <button class="md:hidden text-2xl">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+    <nav>
+        <div>
+            <i class="fa-solid fa-seedling"></i>
+            <h1>AGRINHO 2026</h1>
         </div>
+
+        <div>
+            <a href="#producao">Produção</a>
+            <a href="#sustentabilidade">Sustentabilidade</a>
+            <a href="#desafios">Desafios</a>
+            <a href="#solucoes">Soluções</a>
+            <a href="#interativos">Interativos</a>
+        </div>
+
+        <a href="#contato">Saiba Mais</a>
     </nav>
 
     <!-- HERO -->
-    <section class="hero-bg h-screen flex items-center text-white">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-5xl md:text-6xl font-bold mb-6">
-                O futuro do agronegócio é sustentável
-            </h2>
-            <p class="text-xl md:text-2xl mb-8">
-                Equilíbrio entre alta produtividade e preservação ambiental
-            </p>
-            <a href="#interativos" class="inline-block bg-white text-green-700 font-bold text-lg px-10 py-4 rounded-full hover:bg-green-100 transition">
-                Conheça nossas soluções
-            </a>
-        </div>
+    <section>
+        <h2>O futuro do agronegócio é sustentável</h2>
+        <p>Equilíbrio entre alta produtividade e preservação ambiental</p>
+        <a href="#interativos">Conheça nossas soluções</a>
     </section>
 
     <!-- INTRODUÇÃO -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">O Agronegócio Brasileiro</h2>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <p class="text-lg leading-relaxed">
-                        O agronegócio (cadeia completa) é um dos principais motores da economia brasileira. 
-                        Em 2025, registrou forte crescimento, impulsionando o PIB e as exportações.
-                    </p>
-                </div>
-                <div class="grid grid-cols-2 gap-6 text-center">
-                    <div class="bg-white p-6 rounded-2xl shadow">
-                        <p class="text-4xl font-bold text-green-600">27%</p>
-                        <p class="text-gray-600 mt-2">dos empregos no país</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-2xl shadow">
-                        <p class="text-4xl font-bold text-green-600">11,7%</p>
-                        <p class="text-gray-600 mt-2">de alta em 2025 (produção primária)</p>
-                    </div>
-                </div>
+    <section id="introducao">
+        <h2>O Agronegócio Brasileiro</h2>
+        <p>
+            O agronegócio (cadeia completa) é um dos principais motores da economia brasileira.
+        </p>
+
+        <div>
+            <div>
+                <p>27%</p>
+                <p>dos empregos no país</p>
+            </div>
+
+            <div>
+                <p>11,7%</p>
+                <p>de alta em 2025</p>
             </div>
         </div>
     </section>
 
-    <!-- CARDS DE DESTAQUES -->
-    <section class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Destaques 2025</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-green-50 p-8 rounded-3xl text-center hover:shadow-xl transition">
-                    <i class="fa-solid fa-dollar-sign text-5xl text-green-600 mb-4"></i>
-                    <h3 class="text-2xl font-bold">Participação no PIB</h3>
-                    <p class="text-5xl font-bold text-green-600 mt-4">~25-28%</p>
-                    <p class="mt-2 text-gray-600">(cadeia completa)</p>
-                </div>
-                <div class="bg-green-50 p-8 rounded-3xl text-center hover:shadow-xl transition">
-                    <i class="fa-solid fa-truck text-5xl text-green-600 mb-4"></i>
-                    <h3 class="text-2xl font-bold">Exportações</h3>
-                    <p class="text-5xl font-bold text-green-600 mt-4">Recorde</p>
-                    <p class="mt-2 text-gray-600">Principal setor da balança comercial</p>
-                </div>
-                <div class="bg-green-50 p-8 rounded-3xl text-center hover:shadow-xl transition">
-                    <i class="fa-solid fa-leaf text-5xl text-green-600 mb-4"></i>
-                    <h3 class="text-2xl font-bold">Tecnologia</h3>
-                    <p class="text-5xl font-bold text-green-600 mt-4">+1.000%</p>
-                    <p class="mt-2 text-gray-600">Crescimento de drones agrícolas</p>
-                </div>
+    <!-- DESTAQUES -->
+    <section>
+        <h2>Destaques 2025</h2>
+
+        <div>
+            <div>
+                <i class="fa-solid fa-dollar-sign"></i>
+                <h3>Participação no PIB</h3>
+                <p>~25-28%</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-truck"></i>
+                <h3>Exportações</h3>
+                <p>Recorde</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-leaf"></i>
+                <h3>Tecnologia</h3>
+                <p>+1.000%</p>
             </div>
         </div>
     </section>
 
-    <!-- SEÇÕES PRINCIPAIS -->
-    <section id="producao" class="py-20 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Produção e Importância</h2>
-            <!-- Adicionar conteúdo aqui -->
-        </div>
+    <!-- SEÇÕES -->
+    <section id="producao">
+        <h2>Produção e Importância</h2>
     </section>
 
-    <section id="sustentabilidade" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Sustentabilidade no Campo</h2>
-            <!-- Adicionar conteúdo aqui -->
-        </div>
+    <section id="sustentabilidade">
+        <h2>Sustentabilidade no Campo</h2>
     </section>
 
-    <section id="desafios" class="py-20 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Desafios Ambientais</h2>
-            <!-- Adicionar conteúdo aqui -->
-        </div>
+    <section id="desafios">
+        <h2>Desafios Ambientais</h2>
     </section>
 
-    <section id="solucoes" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Soluções e Tecnologias</h2>
-            <!-- Adicionar conteúdo aqui -->
-        </div>
+    <section id="solucoes">
+        <h2>Soluções e Tecnologias</h2>
     </section>
 
     <!-- INTERATIVOS -->
-    <section id="interativos" class="py-20 bg-green-50">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Interativos</h2>
-            <div class="grid md:grid-cols-2 gap-10">
-                <div class="bg-white p-10 rounded-3xl shadow">
-                    <h3 class="text-2xl font-bold mb-4">Calculadora de Impacto</h3>
-                    <p class="text-gray-600 mb-6">Descubra quanto você pode economizar de água e CO₂ adotando práticas sustentáveis.</p>
-                    <button onclick="alert('Calculadora em desenvolvimento')" 
-                            class="w-full bg-green-600 text-white py-4 rounded-2xl font-medium">
-                        Acessar Calculadora
-                    </button>
-                </div>
-                <div class="bg-white p-10 rounded-3xl shadow">
-                    <h3 class="text-2xl font-bold mb-4">Quiz: Quão sustentável é sua visão do agro?</h3>
-                    <button onclick="alert('Quiz em desenvolvimento')" 
-                            class="w-full bg-green-600 text-white py-4 rounded-2xl font-medium">
-                        Responder Quiz
-                    </button>
-                </div>
+    <section id="interativos">
+        <h2>Interativos</h2>
+
+        <div>
+            <div>
+                <h3>Calculadora de Impacto</h3>
+                <p>Economia de água e CO₂</p>
+                <button>Calculadora</button>
+            </div>
+
+            <div>
+                <h3>Quiz Sustentável</h3>
+                <button>Responder Quiz</button>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-gray-900 text-white py-16">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="grid md:grid-cols-4 gap-10">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">AGRINHO 2026</h3>
-                    <p class="text-gray-400">Promovendo o agronegócio sustentável do Brasil.</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Menu</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white">Início</a></li>
-                        <li><a href="#" class="hover:text-white">Produção</a></li>
-                        <li><a href="#" class="hover:text-white">Sustentabilidade</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Contato</h4>
-                    <p class="text-gray-400">Curitiba, Brasil</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Siga-nos</h4>
-                    <div class="flex gap-4 text-2xl">
-                        <i class="fa-brands fa-instagram hover:text-green-500 cursor-pointer"></i>
-                        <i class="fa-brands fa-linkedin hover:text-green-500 cursor-pointer"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center text-gray-500 text-sm mt-16">
-                &copy; 2026 AGRINHO - Todos os direitos reservados
-            </div>
+    <footer>
+        <div>
+            <h3>AGRINHO 2026</h3>
+            <p>Projeto de agronegócio sustentável</p>
         </div>
+
+        <div>
+            <h4>Menu</h4>
+            <a href="#">Início</a>
+            <a href="#">Produção</a>
+            <a href="#">Sustentabilidade</a>
+        </div>
+
+        <div>
+            <h4>Contato</h4>
+            <p>Curitiba, Brasil</p>
+        </div>
+
+        <div>
+            <h4>Redes sociais</h4>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+
+        <p>© 2026 AGRINHO</p>
     </footer>
 
 </body>
