@@ -1,18 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     // =========================
-    // MENU MOBILE (toggle simples)
-    // =========================
-    const menuBtn = document.querySelector(".menu-btn");
-    const navLinks = document.querySelector(".nav-links");
-
-    if (menuBtn && navLinks) {
-        menuBtn.addEventListener("click", () => {
-            navLinks.classList.toggle("active");
-        });
-    }
-
-    // =========================
     // SCROLL SUAVE PARA LINKS
     // =========================
     document.querySelectorAll('a[href^="#"]').forEach(link => {
@@ -67,5 +55,34 @@ document.addEventListener("DOMContentLoaded", function () {
         section.style.transition = "0.6s ease";
         observer.observe(section);
     });
+
+    // =========================
+    // EFEITO PARALLAX NO HERO
+    // =========================
+    const heroBg = document.querySelector('.hero-bg');
+    
+    if (heroBg) {
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            heroBg.style.transform = `translateY(${scrolled * 0.5}px)`;
+        });
+    }
+
+    // =========================
+    // LAZY LOADING PARA IMAGENS
+    // =========================
+    const images = document.querySelectorAll('img');
+    
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.classList.add('loaded');
+                observer.unobserve(img);
+            }
+        });
+    });
+
+    images.forEach(img => imageObserver.observe(img));
 
 });
