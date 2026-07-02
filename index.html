@@ -31,10 +31,14 @@
     </nav>
 
     <!-- HERO -->
-    <section>
-        <h2>O futuro do agronegócio é sustentável</h2>
-        <p>Equilíbrio entre alta produtividade e preservação ambiental</p>
-        <a href="#interativos">Conheça nossas soluções</a>
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <img src="assets/hero-agro.jpg" alt="Agronegócio Sustentável" class="hero-bg">
+        <div class="hero-content">
+            <h2>O futuro do agronegócio é sustentável</h2>
+            <p>Equilíbrio entre alta produtividade e preservação ambiental</p>
+            <a href="#interativos">Conheça nossas soluções</a>
+        </div>
     </section>
 
     <!-- INTRODUÇÃO -->
@@ -44,7 +48,7 @@
             O agronegócio (cadeia completa) é um dos principais motores da economia brasileira.
         </p>
 
-        <div>
+        <div class="stats">
             <div>
                 <p>27%</p>
                 <p>dos empregos no país</p>
@@ -61,7 +65,7 @@
     <section>
         <h2>Destaques 2025</h2>
 
-        <div>
+        <div class="destaques-grid">
             <div>
                 <i class="fa-solid fa-dollar-sign"></i>
                 <h3>Participação no PIB</h3>
@@ -97,22 +101,29 @@
 
     <section id="solucoes">
         <h2>Soluções e Tecnologias</h2>
+        <div class="solucoes-container">
+            <img src="assets/tecnologias-agro.jpg" alt="Tecnologias Agrícolas" class="solucoes-img">
+            <div class="solucoes-texto">
+                <p>Agricultura de precisão, drones, IoT e inteligência artificial estão revolucionando o campo brasileiro.</p>
+                <p>Essas tecnologias permitem maior eficiência no uso de recursos, redução de desperdícios e aumento da produtividade de forma sustentável.</p>
+            </div>
+        </div>
     </section>
 
     <!-- INTERATIVOS -->
     <section id="interativos">
         <h2>Interativos</h2>
 
-        <div>
+        <div class="interativos-grid">
             <div>
                 <h3>Calculadora de Impacto</h3>
                 <p>Economia de água e CO₂</p>
-                <button>Calculadora</button>
+                <button id="btn-calculadora">Calculadora</button>
             </div>
 
             <div>
                 <h3>Quiz Sustentável</h3>
-                <button>Responder Quiz</button>
+                <button id="btn-quiz">Responder Quiz</button>
             </div>
         </div>
     </section>
